@@ -1,3 +1,5 @@
+import React from "react";
+
 import "./UI.css";
 
 type ErrorHandlerComponentProps = {

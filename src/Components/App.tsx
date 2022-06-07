@@ -54,7 +54,7 @@ export default function App() {
       <header className="App-header">
         <h1>My bookmarks : </h1>
         <div className="bar">
-          <label>
+          <label data-testid="bookmarks.app.url.input">
             URL :
             <input
               type="text"

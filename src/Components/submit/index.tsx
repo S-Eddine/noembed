@@ -1,3 +1,5 @@
+import React from "react";
+
 import "./UI.css";
 
 type SubmitProps = {
@@ -16,6 +18,7 @@ export const Submit = ({ onSubmit, isLoading }: SubmitProps) => {
           onClick={onSubmit}
           className="Submit-button"
           disabled={isLoading}
+          data-testid="bookmarks.app.url.submit"
         />
       )}
     </span>

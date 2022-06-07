@@ -1,6 +1,7 @@
 import { ChangeEvent } from "react";
 import "./UI.css";
 import links from "./../../../constants";
+import React from "react";
 
 type FiltersProps = {
   onClick: (url: string) => void;
