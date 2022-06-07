@@ -1,0 +1,40 @@
+.Submit-button {
+  height: 40px;
+  width: 100px;
+}
+
+.bar-container {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100px;
+}
+
+.loader {
+  border: 9px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 9px solid #3498db;
+  width: 35px;
+  height: 35px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

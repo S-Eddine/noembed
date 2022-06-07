@@ -1,0 +1,10 @@
+.Filter-container {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+}
+
+.label {
+  height: 30px;
+  margin-left: 10px;
+}

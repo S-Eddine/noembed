@@ -1,0 +1,33 @@
+.App-container {
+  display: flex;
+  width: fit-content;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.App-header {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Url-input {
+  height: 40px;
+  width: 400px;
+  margin-left: 25px;
+}
+
+.check-box {
+  margin-right: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+}
