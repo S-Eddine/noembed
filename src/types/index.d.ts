@@ -4,7 +4,6 @@ type MetaData = {
   author_name: string;
   type: string;
   html: string;
-  media_url: string;
 };
 
 export interface VideoMetaData extends MetaData {

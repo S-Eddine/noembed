@@ -1,15 +1,16 @@
-import * as React from "react";
 import { ImageMetaData, MetaData, VideoMetaData } from "../../types";
 import ErrorBoundary from "../common/error-boundaries";
 import "./UI.css";
 import links from "./../../constants";
 import { formatDate, getDuration, getUploadTime } from "./helper";
+import React from "react";
 
 type AlbumCardProps = {
   album: MetaData;
   index: number;
   onDelete: (index: number) => void;
 };
+
 export default function AlbumCard({
   album: Album,
   onDelete,
@@ -43,7 +44,7 @@ export default function AlbumCard({
             message={"Oups, this information are not available for the moment."}
           >
             {Album.type === "video" ? (
-              <div>
+              <div data-testid="bookmarks.card.video">
                 <p>
                   Date d'ajout :{" "}
                   {getUploadTime((Album as VideoMetaData).upload_date)}
