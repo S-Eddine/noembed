@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# My bookmarks
 
 ## Available Scripts
 
@@ -19,21 +19,15 @@ The same varible is defined in the `.env` file for local dev.
 
 This is a screenshot of the application in production environement :
 
-Capture d’écran 2022-06-07 à 23.18.50<img width="1734" alt="image" src="https://user-images.githubusercontent.com/39771475/172484692-2197beef-43f5-4452-9397-78130b18792f.png">
+<img width="1734" alt="image" src="https://user-images.githubusercontent.com/39771475/172484692-2197beef-43f5-4452-9397-78130b18792f.png">
 
-In dev mode, a select object was added with some default links the facilitate testing : 
+In dev mode, a select object was added with some default links to facilitate testing : 
+<img width="755" alt="image" src="https://user-images.githubusercontent.com/39771475/172486112-cd60a51a-a1a5-4e80-be85-9d219daa6774.png">
 
-sc.gif![image](https://user-images.githubusercontent.com/39771475/172485619-ed342388-a9d8-4d5d-a2c3-3e401f3c7dd3.png)
 
 Use the image error link to test error handling:
 
-SC2.gif![image](https://user-images.githubusercontent.com/39771475/172485876-085bd9d9-3623-4d4c-8f53-586203905167.png)
+<img width="251" alt="image" src="https://user-images.githubusercontent.com/39771475/172486183-d2c3b907-de6b-4e69-a951-754f8ef70f90.png">
 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
