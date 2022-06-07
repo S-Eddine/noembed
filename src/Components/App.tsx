@@ -13,6 +13,8 @@ export default function App() {
   const [url, setUrl] = React.useState<string>("");
   const [data, setData] = React.useState<AlbumData[]>([]);
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
+  const [isTechnicalError, setIsTechnicalError] =
+    React.useState<boolean>(false);
   const [isDev] = React.useState<boolean>(
     process.env.NODE_ENV === "development"
   );
@@ -38,10 +40,15 @@ export default function App() {
   function HandleSubmit() {
     if (url.length > 0 && !isUrlDuplicated(url)) {
       setIsLoading(true);
-      UseFetchData(url).then((response: AlbumData) => {
-        setData([...data, response]);
-        setIsLoading(false);
-      });
+      UseFetchData(url)
+        .then((response: AlbumData) => {
+          setData([...data, response]);
+          setIsLoading(false);
+        })
+        .catch((_e) => {
+          setIsLoading(false);
+          setIsTechnicalError(true);
+        });
     }
   }
 
@@ -53,6 +60,11 @@ export default function App() {
     <div>
       <header className="App-header">
         <h1>My bookmarks : </h1>
+        {isTechnicalError && (
+          <h4 style={{ color: "red" }}>
+            Something went wrong, please try again later !
+          </h4>
+        )}
         <div className="bar">
           <label data-testid="bookmarks.app.url.input">
             URL :
@@ -78,6 +90,7 @@ export default function App() {
             <ErrorBoundary
               hasError={false}
               onDeleteElement={() => onDeleteElement(index)}
+              key={element.title}
             >
               <AlbumCard
                 album={element}

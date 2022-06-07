@@ -6,7 +6,6 @@ export default async function UseFetchData(url: string): Promise<any> {
     method: "POST",
     headers,
   };
-  console.log("SEA env ", process.env.REACT_APP_NOEMBED);
 
   const response = await fetch(
     `${process.env.REACT_APP_NOEMBED}/embed?url=${url}`,
@@ -16,7 +15,6 @@ export default async function UseFetchData(url: string): Promise<any> {
   if (response.ok) {
     const resp: any = await response.json();
     return resp as ImageMetaData;
-  } else {
-    return { error: "the request failed" };
   }
+  return { error: "the request failed" };
 }

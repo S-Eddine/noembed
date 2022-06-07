@@ -5,7 +5,7 @@ import { MetaData } from "../../../types";
 import React from "react";
 
 export const mocked_album_photo: MetaData = {
-  author_name: "author_name Y",
+  author_name: "author_name",
   html: "html",
   title: "title",
   type: "photo",
