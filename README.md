@@ -30,4 +30,18 @@ Use the image error link to test error handling:
 <img width="251" alt="image" src="https://user-images.githubusercontent.com/39771475/172486183-d2c3b907-de6b-4e69-a951-754f8ef70f90.png">
 
 
+## Links for testing
 
+### VIMEO
+    "https://vimeo.com/234677070",
+    "https://vimeo.com/155572038",
+    "https://vimeo.com/58150375",
+    "https://vimeo.com/42315862",
+    "https://vimeo.com/715848386",
+
+### FLICKS
+    "https://www.flickr.com/photos/snowyturner/52119223284/in/explore-2022-06-03/",
+    "https://www.flickr.com/photos/by_floki/52119150255/in/explore-2022-06-03/",
+    "https://www.flickr.com/photos/wannwannmaru/52119887895/in/explore-2022-06-03/",
+    "https://www.flickr.com/photos/jayhuangphotos/52116574126/in/explore-2022-06-03/",
+  
